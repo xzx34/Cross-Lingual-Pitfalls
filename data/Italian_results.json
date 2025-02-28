@@ -1,0 +1,29 @@
+{
+    "English": {
+        "qwen-2.5-7B": 205.0,
+        "llama-3.1-8B": 292.0,
+        "gemma-2-9B": 292.0,
+        "gemma-2-27B": 295.0,
+        "llama-3.1-70B": 278.0,
+        "qwen-2.5-72B": 295.0,
+        "gpt-4o-mini": 293.0,
+        "gpt-4o": 290.0,
+        "yi-lightning": 259.0,
+        "o1-mini": 265.0,
+        "claude-3.5-sonnet": 282.0
+    },
+    "Italian": {
+        "qwen-2.5-7B": 52.0,
+        "llama-3.1-8B": 21.0,
+        "gemma-2-9B": 30.0,
+        "gemma-2-27B": 40.0,
+        "llama-3.1-70B": 185.0,
+        "qwen-2.5-72B": 125.0,
+        "gpt-4o-mini": 68.0,
+        "gpt-4o": 232.0,
+        "yi-lightning": 145.0,
+        "o1-mini": 216.0,
+        "claude-3.5-sonnet": 234.0
+    },
+    "Total Questions": 295
+}
