@@ -1,12 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Literal
 
-class Idea(BaseModel):
-    idea: str
-
-class Ideas(BaseModel):
-    ideas: List[Idea]
-
 def get_category(question=None):
     return f"""[Instruction]  
 You are an expert in categorizing questions based on their content. Your task is to analyze the given question and assign it to **exactly one** of the following categories, based solely on its primary subject.  
@@ -29,35 +23,6 @@ You are an expert in categorizing questions based on their content. Your task is
 
 """
 
-
-def get_ideas(question, choices):
-    return f"""[Instruction]
-You are an expert in designing subtle distractors for questions. Carefully review the question and the incorrect options provided. For each incorrect option, brainstorm a unique distraction idea that could subtly lead the model toward selecting that specific incorrect answer without affecting the question's correctness. Each idea should be general and avoid exact instructions on how to implement it.
-
-Provide one distraction idea for each incorrect option, focusing on how to naturally incorporate information that makes that option appear plausible.
-Ensure the rephrased question only includes distractions related to each specific incorrect option, while keeping the original question's meaning and intent intact.
-Let’s approach this thoughtfully, addressing each incorrect option one at a time!"
-
-[The Start of the Question]
-{question}
-[The End of the Question]
-
-[The Start of th Incorrect Options]
-{choices}
-[The End of the Incorrect Options]
-"""
-
-def extract_ideas(prompt=None, number=None):
-    return f"""[Instruction]
-You are an expert in JSON file processing. You need to output {number} ideas and its corresponding choice based on the model's response, and ensure that the model's response is accurately outputed.
-
-[The Start of the Model's Response]
-{prompt}
-[The End of the Model's Response]
-
-[Output Format]
-[{{"idea": <The model's full idea>, "option": <Your extracted option>}}, ...]
-"""
 def get_distraction(question=None, wrong_answer=None):
     return f"""[System]
 You are an expert at subtly embedding distractions based on the incorrect option provided. Your task is to generate a distraction that aligns with the incorrect option without altering the original question's quality or meaning. Follow these specific rules:  
