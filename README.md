@@ -77,3 +77,17 @@ python visualization.py
   --input_folder data/ 
   --output_folder visualizations/
 ```
+
+## Citation
+
+```bibtex
+@misc{xu2025crosslingualpitfallsautomaticprobing,
+      title={Cross-Lingual Pitfalls: Automatic Probing Cross-Lingual Weakness of Multilingual Large Language Models}, 
+      author={Zixiang Xu and Yanbo Wang and Yue Huang and Xiuying Chen and Jieyu Zhao and Meng Jiang and Xiangliang Zhang},
+      year={2025},
+      eprint={2505.18673},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.18673}, 
+}
+```
