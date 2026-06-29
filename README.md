@@ -1,5 +1,9 @@
 <h1 align="center">Cross-Lingual Pitfalls: Automatic Probing Cross-Lingual Weakness of Multilingual Large Language Models</h1>
 
+🌐 **Project page:** https://xzx34.github.io/cross-lingual-pitfalls/
+
+📄 **ACL Anthology:** https://aclanthology.org/2025.acl-long.404/
+
 ## Updates & News
 - [05/15/2025] 🥂 **Cross-Lingual Pitfalls has been accepted by ACL 2025! See you in Vienna!**
 
@@ -79,6 +83,24 @@ python visualization.py
 ```
 
 ## Citation
+
+If you use this code or dataset, please cite the ACL 2025 version:
+
+```bibtex
+@inproceedings{xu-etal-2025-cross,
+    title = "Cross-Lingual Pitfalls: Automatic Probing Cross-Lingual Weakness of Multilingual Large Language Models",
+    author = "Xu, Zixiang  and Wang, Yanbo  and Huang, Yue  and Chen, Xiuying  and Zhao, Jieyu  and Jiang, Meng  and Zhang, Xiangliang",
+    editor = "Che, Wanxiang  and Nabende, Joyce  and Shutova, Ekaterina  and Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul, year = "2025", address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.404/",
+    doi = "10.18653/v1/2025.acl-long.404",
+    pages = "8254--8284", ISBN = "979-8-89176-251-0"
+}
+```
+
+The arXiv preprint can also be cited:
 
 ```bibtex
 @misc{xu2025crosslingualpitfallsautomaticprobing,
