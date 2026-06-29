@@ -4,6 +4,10 @@
 
 📄 **ACL Anthology:** https://aclanthology.org/2025.acl-long.404/
 
+📄 **arXiv:** https://arxiv.org/abs/2505.18673
+
+🤗 **Dataset (Hugging Face):** https://huggingface.co/datasets/xzx34/cross-lingual-pitfalls
+
 ## Updates & News
 - [05/15/2025] 🥂 **Cross-Lingual Pitfalls has been accepted by ACL 2025! See you in Vienna!**
 
@@ -23,6 +27,17 @@ We introduce a systematic framework for studying **Cross-Lingual Weakness**—a 
 <p align="center">
 <img width="85%" alt="CLP Pipeline" src="images/pipeline.jpg">    
 </p>
+
+## Dataset
+
+The full benchmark — **6,713 bilingual (English ↔ target-language) pairs across 16 languages**, built from five English QA benchmarks (MMLU, ARC, CommonsenseQA, TruthfulQA, SciQ) — is available on the Hugging Face Hub and mirrored under [`data/`](data/):
+
+🤗 **https://huggingface.co/datasets/xzx34/cross-lingual-pitfalls**
+
+```python
+from datasets import load_dataset
+ds = load_dataset("xzx34/cross-lingual-pitfalls", "Chinese")
+```
 
 ## Installation
 
